@@ -17,9 +17,9 @@ namespace Assets.Scripts.Content
 
         public T Generate() => _content;
 
-        public T Generate(GameObject parent) => _content;
+        public T Generate(Transform parent) => _content;
 
-        public T Generate(GameObject parent, Vector3 position) => _content;
+        public T Generate(Transform parent, Vector3 position) => _content;
 
         public T Generate(Vector3 position) => _content;
     }

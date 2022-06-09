@@ -15,9 +15,9 @@ namespace Assets.Scripts.Content
 
         public T Generate() => Object.Instantiate(_originalContent);
 
-        public T Generate(GameObject parent) => Object.Instantiate(_originalContent, parent.transform);
+        public T Generate(Transform parent) => Object.Instantiate(_originalContent, parent);
 
-        public T Generate(GameObject parent, Vector3 position) => Object.Instantiate(_originalContent, position, Quaternion.identity, parent.transform);
+        public T Generate(Transform parent, Vector3 position) => Object.Instantiate(_originalContent, position, Quaternion.identity, parent);
 
         public T Generate(Vector3 position) => Object.Instantiate(_originalContent, position, Quaternion.identity);
     }
